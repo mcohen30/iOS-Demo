@@ -10,21 +10,43 @@ import UIKit
 
 class StarshipTableViewController: UITableViewController {
 
-    let starships = [
-        Starship(name: "Death Star", model: "Battle Station", manufacturer: "Empire", costInCredits: "100000000"),
-        Starship(name: "Millennium Falcon", model: "Battle Station", manufacturer: "Company", costInCredits: "55555"),
-        ]
+//    let starships = [
+//        Starship(name: "Death Star", model: "Battle Station", manufacturer: "Empire", costInCredits: "100000000"),
+//        Starship(name: "Millennium Falcon", model: "Battle Station", manufacturer: "Company", costInCredits: "55555"),
+//        ]
+    
+    let service = StarWarsService()
+    var starships = [Starship]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.reloadData()
+        reloadStarships()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    func reloadStarships() {
+        
+        service.getStarships { (result) in
+            
+            switch result {
+            case.success(let starships):
+                self.starships = starships
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            case.failure(let error):
+                print(error)
+
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

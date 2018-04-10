@@ -17,6 +17,7 @@
 		21C02C1C207C1116005315A9 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C02C1B207C1116005315A9 /* Starship.swift */; };
 		21C02C1E207C11C1005315A9 /* StarshipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C02C1D207C11C1005315A9 /* StarshipTableViewController.swift */; };
 		21C02C20207C17ED005315A9 /* StarshipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C02C1F207C17ED005315A9 /* StarshipTableViewCell.swift */; };
+		21C02C22207C1E1C005315A9 /* StarWarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C02C21207C1E1C005315A9 /* StarWarsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		21C02C1B207C1116005315A9 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
 		21C02C1D207C11C1005315A9 /* StarshipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipTableViewController.swift; sourceTree = "<group>"; };
 		21C02C1F207C17ED005315A9 /* StarshipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipTableViewCell.swift; sourceTree = "<group>"; };
+		21C02C21207C1E1C005315A9 /* StarWarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				21C02BF1207C1073005315A9 /* Main.storyboard */,
 				21C02C1F207C17ED005315A9 /* StarshipTableViewCell.swift */,
 				21C02BF4207C1074005315A9 /* Assets.xcassets */,
+				21C02C21207C1E1C005315A9 /* StarWarsService.swift */,
 				21C02BF6207C1074005315A9 /* LaunchScreen.storyboard */,
 				21C02BF9207C1074005315A9 /* Info.plist */,
 			);
@@ -269,6 +272,7 @@
 				21C02BF0207C1073005315A9 /* ViewController.swift in Sources */,
 				21C02BEE207C1073005315A9 /* AppDelegate.swift in Sources */,
 				21C02C1E207C11C1005315A9 /* StarshipTableViewController.swift in Sources */,
+				21C02C22207C1E1C005315A9 /* StarWarsService.swift in Sources */,
 				21C02C20207C17ED005315A9 /* StarshipTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

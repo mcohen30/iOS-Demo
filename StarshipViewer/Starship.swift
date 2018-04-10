@@ -8,7 +8,11 @@
 
 import Foundation
 
-struct Starship{
+struct Starships: Codable{
+    let results: [Starship]
+}
+
+struct Starship: Codable{
     
     let name: String
     let model: String
